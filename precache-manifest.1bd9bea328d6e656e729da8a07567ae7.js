@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/guardian-search/static/css/main.37b9ebad.chunk.css"
   },
   {
-    "revision": "2d29ef6c5163a504e2e026ac7741b195",
+    "revision": "fee605227b1174d72b86fe56571887de",
     "url": "/guardian-search/index.html"
   }
 ];
