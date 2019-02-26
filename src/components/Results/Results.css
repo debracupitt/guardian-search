@@ -1,0 +1,22 @@
+.Results {
+  width: 85%;
+  margin: 50px auto;
+  min-height: 200px;
+  max-height: 100%;
+}
+
+/* For the pull out drawer
+.results-container {
+  margin-bottom: 80px;
+} */
+
+.sectionArticles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.section h3 {
+  margin-left: 10px;
+}

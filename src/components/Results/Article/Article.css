@@ -1,0 +1,61 @@
+.Article {
+  width: 250px;
+  padding: 16px;
+  text-align: left;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  color: #00002b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Author {
+  margin: 16px 0;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.Article:hover,
+.Article:active {
+  background-color: #fed411;
+  transition: 0.3s all ease-out;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.date {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+a,
+.link,
+.save {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link {
+  font-weight: 100;
+  color: #24777b;
+}
+
+.link:hover,
+.link:active {
+  font-weight: 400;
+}
+
+.save {
+  position: relative;
+  float: right;
+  top: -15px;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  background-color: #24777b;
+}

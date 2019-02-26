@@ -1,0 +1,21 @@
+.search {
+  margin-top: 100px;
+  text-align: center;
+}
+
+input {
+  background-color: #24777b26;
+  border: 1px solid #00002b;
+  font-weight: 300;
+  font-size: 0.875em;
+  padding: 10px;
+  position: relative;
+  transition: 0.3s all ease-out;
+  width: 20em;
+  color: #000;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}

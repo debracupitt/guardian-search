@@ -1,0 +1,29 @@
+.SavedSection {
+  width: 85%;
+  margin: 50px auto 0px auto;
+  background-color: #00002b;
+  color: #ffffff;
+  width: 100%;
+  height: 600px;
+  /* position: fixed; */
+}
+
+/* .drawer-closed {
+  bottom: -545px;
+} */
+
+.SavedSection h2 {
+  text-align: center;
+  padding: 10px 0 15px 0;
+  margin: auto;
+}
+
+.saved-articles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 85%;
+  margin: auto;
+  overflow: scroll;
+  height: 85%;
+}
