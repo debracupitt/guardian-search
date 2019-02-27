@@ -1,13 +1,13 @@
 {
   "main.css": "/guardian-search/static/css/main.37b9ebad.chunk.css",
-  "main.js": "/guardian-search/static/js/main.dd02886c.chunk.js",
-  "main.js.map": "/guardian-search/static/js/main.dd02886c.chunk.js.map",
+  "main.js": "/guardian-search/static/js/main.deacfd25.chunk.js",
+  "main.js.map": "/guardian-search/static/js/main.deacfd25.chunk.js.map",
   "runtime~main.js": "/guardian-search/static/js/runtime~main.7323f414.js",
   "runtime~main.js.map": "/guardian-search/static/js/runtime~main.7323f414.js.map",
-  "static/js/2.5a97c0b0.chunk.js": "/guardian-search/static/js/2.5a97c0b0.chunk.js",
-  "static/js/2.5a97c0b0.chunk.js.map": "/guardian-search/static/js/2.5a97c0b0.chunk.js.map",
+  "static/js/2.cb065fa5.chunk.js": "/guardian-search/static/js/2.cb065fa5.chunk.js",
+  "static/js/2.cb065fa5.chunk.js.map": "/guardian-search/static/js/2.cb065fa5.chunk.js.map",
   "index.html": "/guardian-search/index.html",
-  "precache-manifest.1bd9bea328d6e656e729da8a07567ae7.js": "/guardian-search/precache-manifest.1bd9bea328d6e656e729da8a07567ae7.js",
+  "precache-manifest.ac3243e248ec1296bf784225df01ec24.js": "/guardian-search/precache-manifest.ac3243e248ec1296bf784225df01ec24.js",
   "service-worker.js": "/guardian-search/service-worker.js",
   "static/css/main.37b9ebad.chunk.css.map": "/guardian-search/static/css/main.37b9ebad.chunk.css.map"
 }
