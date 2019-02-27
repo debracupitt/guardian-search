@@ -2,6 +2,7 @@
 
 - Add debounce to keyup/change event on search input to delay api call and therefore reduce number of calls
 - Add local cashing of results for one day
+- Add drawer-slide feature
 
 ## Questions for the Project Team
 
