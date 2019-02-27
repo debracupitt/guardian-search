@@ -15,8 +15,8 @@ class Results extends Component {
     this.setState({ results: this.props.articles });
   }
 
+  // format date data to DD/MM/YYYY
   reformatDate = date => {
-    // format date data to DD/MM/YYYY
     const dateArray = date.split("T")[0].split("-");
     let reformattedDateArray = [];
 
@@ -28,22 +28,50 @@ class Results extends Component {
     return finalDate;
   };
 
-  saveHandler = (articleId, articleTitle, articleDate, articleUrl) => {
-    const updatedSaved = [
-      ...this.state.savedResults,
-      {
-        id: articleId,
-        webTitle: articleTitle,
-        webPublicationDate: articleDate,
-        webUrl: articleUrl
+  // Check currently saved articles for match with new saved article to prevent duplication
+  checkSavedMatch = (array, articleId) => {
+    for (let i = 0; i < array.length + 1; i++) {
+      if (array[i].id === articleId) {
+        return i;
       }
-    ];
-    this.setState({ savedResults: updatedSaved });
+    }
   };
 
+  // Save articles to array stored in state
+  saveHandler = (articleId, articleTitle, articleDate, articleUrl) => {
+    // Check currently saved articles for match with new saved article to prevent duplication
+    const articleSaved = this.state.savedResults.find(
+      article => article.id === articleId
+    );
+
+    // If no match, store to saved on state object
+    if (articleSaved === undefined) {
+      const updatedSaved = [
+        ...this.state.savedResults,
+        {
+          id: articleId,
+          webTitle: articleTitle,
+          webPublicationDate: articleDate,
+          webUrl: articleUrl
+        }
+      ];
+      this.setState({ savedResults: updatedSaved });
+    }
+  };
+
+  // Delete article card
   deleteHandler = event => {
-    // Delete article card
-    event.target.parentNode.parentNode.remove();
+    // Find the index of the saved article in the savedResults state array
+    const indexToDelete = this.checkSavedMatch(
+      this.state.savedResults,
+      event.target.parentNode.parentNode.id
+    );
+    // Create a copy of savedResults array to delete article from
+    const savedCopy = [...this.state.savedResults];
+    // Delete article from array copy
+    savedCopy.splice(indexToDelete, 1);
+    // Update the state with new savedResults
+    this.setState({ savedResults: savedCopy });
   };
 
   render() {
@@ -90,6 +118,7 @@ class Results extends Component {
         <SavedArticle
           className="saved"
           key={a.id}
+          id={a.id}
           title={a.webTitle}
           date={a.webPublicationDate}
           url={a.webUrl}

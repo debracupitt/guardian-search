@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 import "./Search.css";
-import axios from "../../axios-articles";
 import Results from "../../components/Results/Results";
 import Aux from "../../hoc/Aux/Aux";
 

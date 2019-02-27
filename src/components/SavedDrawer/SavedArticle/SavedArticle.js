@@ -3,7 +3,7 @@ import React from "react";
 import "./SavedArticle.css";
 
 const savedArticle = props => (
-  <div className="SavedArticle" href={props.url}>
+  <div className="SavedArticle" href={props.url} id={props.id}>
     <div>
       <p className="title">{props.title}</p>
     </div>
